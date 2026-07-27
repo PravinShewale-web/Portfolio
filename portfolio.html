@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravin Shewale | Sr. UI Engineer &amp; Marketing Automation Specialist</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-green: #34d399;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgba(15, 23, 42, 0.9) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .nav-link {
+            color: var(--text-muted) !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-blue) !important;
+        }
+
+        /* Hero Layout */
+        .hero-section {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        /* Card Layouts */
+        .custom-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .custom-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+
+        /* Badges */
+        .tech-badge {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 3px;
+        }
+
+        /* Category Filter/Section Style */
+        .category-header {
+            border-left: 3px solid var(--accent-blue);
+            padding-left: 12px;
+            margin-top: 2rem;
+            margin-bottom: 1.25rem;
+            color: var(--accent-blue);
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Experience Timeline Elements */
+        .timeline-item {
+            position: relative;
+            padding-left: 24px;
+            border-left: 2px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-blue);
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .project-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white tracking-tight" href="#">
+                Pravin<span style="color: var(--accent-blue);">Shewale.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small tracking-wider fw-semibold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#portfolio">All Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Showcase Section -->
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <p class="mono mb-2" style="color: var(--accent-blue);">Senior UI Engineer &amp; Marketing Automation Specialist</p>
+                    <h1 class="display-4 fw-bold text-white mb-3">Building High-Impact Web Interfaces, Technical SEO &amp; Enterprise Automation.</h1>
+                    <p class="lead text-secondary mb-4" style="color: var(--text-muted) !important; max-width: 750px;">
+                        Over 10 years of experience delivering robust web and UI architectures. Expertly bridging design and technology across the Salesforce ecosystem (Pardot, Marketing Cloud), modern front-end engineering, Technical SEO, and CMS integrations.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#portfolio" class="btn btn-outline-info px-4 py-2 fw-semibold">View All Projects</a>
+                        <a href="#contact" class="btn btn-dark border-secondary px-4 py-2 fw-semibold">Connect Directly</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Skills Matrix Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <p class="mono mb-1" style="color: var(--accent-green);">01 // CAPABILITIES</p>
+                    <h2 class="h1 fw-bold">Technical Stack &amp; Core Competencies</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="text-white fw-bold mb-3">Web Development</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="tech-badge">HTML5</span><span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">SCSS</span><span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">jQuery</span><span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">PSD to HTML</span><span class="tech-badge">WordPress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="text-white fw-bold mb-3">Salesforce Ecosystem</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="tech-badge">Community Portals</span>
+                            <span class="tech-badge">SLDS Framework</span>
+                            <span class="tech-badge">LWC &amp; VF Components Styling</span>
+                            <span class="tech-badge">Classic Email Templates</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="text-white fw-bold mb-3">Marketing &amp; SEO</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="tech-badge">Email Templates</span>
+                            <span class="tech-badge">Themes</span>
+                            <span class="tech-badge">Custom Preference Pages</span>
+                            <span class="tech-badge">AMPScript</span>
+                            <span class="tech-badge">Cloud Pages</span>
+                            <span class="tech-badge">Technical SEO</span>
+                            <span class="tech-badge">Schema Markup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-4 h-100">
+                        <h5 class="text-white fw-bold mb-3">Platforms &amp; Tools</h5>
+                        <div class="d-flex flex-wrap">
+                            <span class="tech-badge">Salesforce CRM</span>
+                            <span class="tech-badge">Pardot</span>
+                            <span class="tech-badge">Marketing Cloud</span>
+                            <span class="tech-badge">HubSpot</span>
+                            <span class="tech-badge">Mailchimp</span>
+                            <span class="tech-badge">Okta</span>
+                            <span class="tech-badge">Jira</span>
+                            <span class="tech-badge">Git / Bitbucket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <p class="mono mb-1" style="color: var(--accent-blue);">02 // HISTORY</p>
+                    <h2 class="h1 fw-bold">Professional Experience</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-11">
+                    
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">Independent Consultant / Freelancer</h4>
+                            <span class="mono text-info small">Nov 2023 – Present</span>
+                        </div>
+                        <p class="text-secondary small mb-3">Global Clients</p>
+                        <p style="color: var(--text-muted);">Delivered high-performance front-end engineering, custom WordPress migrations, Technical SEO, and interactive marketing solutions for global clients. Focused on optimizing user experiences through pixel-perfect responsive web designs and modular component architecture.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">Software Engineer</h4>
+                            <span class="mono text-info small">Dec 2022 – Nov 2023</span>
+                        </div>
+                        <p class="text-secondary small mb-3">Tech Mahindra</p>
+                        <p style="color: var(--text-muted);">Contributed to the development and maintenance of a large-scale, responsive Salesforce Community site for Eylea, an FDA-approved pharmaceutical brand. Engineered Lightning/Visualforce components, responsive Salesforce email templates, and RBAC administrative views.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">UI Developer (Contractor)</h4>
+                            <span class="mono text-info small">Sep 2021 – Dec 2022</span>
+                        </div>
+                        <p class="text-secondary small mb-3">Publicis Sapient (via Cadmaxx &amp; Sumeru)</p>
+                        <p style="color: var(--text-muted);">Served as a key UI Developer for high-profile global clients like Philip Morris Japan and DMCC Smart City Portal. Combined advanced front-end technologies with marketing automation (Marketing Cloud / Interaction Studio) and geolocation services.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">UI Developer</h4>
+                            <span class="mono text-info small">Jan 2017 – Sep 2021</span>
+                        </div>
+                        <p class="text-secondary small mb-3">fusionSpan India</p>
+                        <p style="color: var(--text-muted);">Drove the frontend strategy for high-traffic, membership-oriented WordPress websites for major US-based organizations (NAW, AAS, TCA, STMA, GBA, AOA, BAAS). Bridged web interfaces with Salesforce portals using AMPScript and custom Visualforce styling.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">Web Developer (Team Lead)</h4>
+                            <span class="mono text-info small">Nov 2015 – Dec 2016</span>
+                        </div>
+                        <p class="text-secondary small mb-3">Cruxoid IT Solutions</p>
+                        <p style="color: var(--text-muted);">Led a 3-member development team focused on designing and engineering high-performance, multipurpose responsive HTML templates (Loomx, Startup, Pets, Scilla) for commercial release on Theme Forest.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="d-flex flex-wrap justify-content-between align-items-baseline mb-2">
+                            <h4 class="text-white fw-bold m-0">Web Developer</h4>
+                            <span class="mono text-info small">Sep 2014 – Oct 2015</span>
+                        </div>
+                        <p class="text-secondary small mb-3">Enrich Web Technologies Pvt. Ltd.</p>
+                        <p style="color: var(--text-muted);">Served as a core front-end team member focused on UX modernization, converting wireframes into responsive, high-performance websites across Tourism, Real Estate, E-commerce, and Industrial sectors.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Portfolio / All Projects Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <p class="mono mb-1" style="color: var(--accent-green);">03 // PRODUCTION PORTFOLIO</p>
+                    <h2 class="h1 fw-bold">All Projects Delivered (Chronological Order)</h2>
+                    <p style="color: var(--text-muted);">Comprehensive list of client projects, platforms, and commercial themes engineered over 10+ years.</p>
+                </div>
+            </div>
+
+            <!-- Category 1: Independent Consulting -->
+            <div class="category-header fw-bold">1. Independent Consulting / Freelance Projects (2023 – Present)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Technical SEO &amp; Optimization</span>
+                            <h5 class="text-white fw-bold mb-2">Lyfe Focus Blog</h5>
+                            <a href="https://blog.lyfefocus.com/" target="_blank" class="project-link small d-block mb-2">blog.lyfefocus.com</a>
+                            <p style="color: var(--text-muted);" class="small">
+                                Executed end-to-end Technical SEO and performance optimization strategies. Improved crawlability, optimized PageSpeed, implemented Schema markup, and structured semantic HTML hierarchies to drive organic traffic.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">Technical SEO</span>
+                            <span class="tech-badge">Schema Markup</span>
+                            <span class="tech-badge">PageSpeed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">WordPress Redesign</span>
+                            <h5 class="text-white fw-bold mb-2">Dashdynamic Site Redesign</h5>
+                            <a href="https://dashdynamics.co.uk" target="_blank" class="project-link small d-block mb-2">dashdynamics.co.uk</a>
+                            <p style="color: var(--text-muted);" class="small">
+                                Modernized a legacy framework into a scalable, high-conversion interface. Rebuilt layout grids and decoupled design styling from backend CMS structures using clean, reusable templates.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">WordPress</span>
+                            <span class="tech-badge">Bootstrap 4</span>
+                            <span class="tech-badge">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Digital Asset Engineering</span>
+                            <h5 class="text-white fw-bold mb-2">MR – Interactive Slides</h5>
+                            <span class="text-secondary small d-block mb-2">Presentation Framework</span>
+                            <p style="color: var(--text-muted);" class="small">
+                                Architected presentation assets rendering complex data models with responsive animations. Built logic-driven JS triggers and CSS transition states for smooth playback.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS Animations</span>
+                            <span class="tech-badge">RWD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Category 2: Tech Mahindra -->
+            <div class="category-header fw-bold">2. Enterprise Pharma &amp; Healthcare — Tech Mahindra (2022 – 2023)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-12">
+                    <div class="custom-card p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">FDA-Approved Healthcare Portal</span>
+                            <h5 class="text-white fw-bold mb-2">Eylea HCP Community Portal</h5>
+                            <a href="https://eyleahcp.us" target="_blank" class="project-link small d-block mb-2">eyleahcp.us</a>
+                            <p style="color: var(--text-muted);" class="small">
+                                Built a multi-page, responsive Salesforce Community portal and custom web interface for healthcare professionals. Architected UI components for administrative workflows, engineered Role-Based Access Control (RBAC), and developed responsive Classic Salesforce Email Templates adhering to W3C standards.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">Salesforce Lightning</span>
+                            <span class="tech-badge">Visualforce</span>
+                            <span class="tech-badge">Community Cloud</span>
+                            <span class="tech-badge">RBAC Access Control</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Category 3: Publicis Sapient -->
+            <div class="category-header fw-bold">3. Global Client Platforms — Publicis Sapient (2021 – 2022)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Dynamic Context Marketing</span>
+                            <h5 class="text-white fw-bold mb-2">Philip Morris Japan (IQOS) – Unified Perso</h5>
+                            <a href="https://jp.iqos.com" target="_blank" class="project-link small d-block mb-2">jp.iqos.com</a>
+                            <p style="color: var(--text-muted);" class="small">
+                                Implemented a "Unified Perso" marketing strategy to enhance customer journeys. Integrated custom web templates and dynamic campaigns using Marketing Cloud (Interaction Studio) for real-time customer tracking and personalized recommendations.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">Marketing Cloud</span>
+                            <span class="tech-badge">Interaction Studio</span>
+                            <span class="tech-badge">HTML5/CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Smart City Community Portal</span>
+                            <h5 class="text-white fw-bold mb-2">DMCC Smart City Portal</h5>
+                            <a href="https://dmcc.ae" target="_blank" class="project-link small d-block mb-2">dmcc.ae</a>
+                            <p style="color: var(--text-muted);" class="small">
+                                Built a multi-page, responsive Salesforce Community portal for Dubai Multi Commodities Centre. Engineered UI components with live geolocation features and real-time tracking alongside RBAC access control.
+                            </p>
+                        </div>
+                        <div class="mt-3">
+                            <span class="tech-badge">Salesforce Community Cloud</span>
+                            <span class="tech-badge">SLDS</span>
+                            <span class="tech-badge">Geolocation Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Category 4: fusionSpan India -->
+            <div class="category-header fw-bold">4. US Membership &amp; Organization Web Ecosystems — fusionSpan (2017 – 2021)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Wholesale Distribution</span>
+                            <h5 class="text-white fw-bold mb-2">NAW (National Association of Wholesaler-Distributors)</h5>
+                            <a href="https://naw.org" target="_blank" class="project-link small d-block mb-2">naw.org</a>
+                            <p style="color: var(--text-muted);" class="small">Developed custom membership layouts and shopping cart checkout flows integrated with backend member portals.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tech-badge">WordPress</span><span class="tech-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Academic Publication</span>
+                            <h5 class="text-white fw-bold mb-2">AAS &amp; BAAS (American Astronomical Society)</h5>
+                            <a href="https://journals.aas.org" target="_blank" class="project-link small d-inline-block mb-2">journals.aas.org |</a><a href="https://baas.aas.org" target="_blank" class="project-link small d-inline-block mb-2">baas.aas.org</a>
+                            <p style="color: var(--text-muted);" class="small">Managed responsive UI for high-authority academic journals, bulletins, and research paper sites.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tech-badge">WordPress</span><span class="tech-badge">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Logistics Portal</span>
+                            <h5 class="text-white fw-bold mb-2">Truckload Carriers Association (TCA)</h5>
+                            <a href="https://truckload.org" target="_blank" class="project-link small d-block mb-2">truckload.org</a>
+                            <p style="color: var(--text-muted);" class="small">Implemented responsive design systems and styled Salesforce portal extensions for industry members.</p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tech-badge">Bootstrap 4</span><span class="tech-badge">Visualforce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="custom-card p-4">
+                        <span class="text-info mono small d-block mb-2">Corporate &amp; Association Portfolio</span>
+                        <h5 class="text-white fw-bold mb-2">fusionSpan Corporate &amp; Partner Client Network</h5>
+                        <p style="color: var(--text-muted);" class="small mb-3">
+                            Spearheaded total front-end redesign of corporate site (<a href="https://fusionspan.com" target="_blank" class="project-link">fusionspan.com</a>) using SCSS/Bootstrap 4. Engineered AMPScript preference centers, Salesforce email templates, and responsive portals for major associations:
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="https://stma.org" target="_blank" class="btn btn-sm project-link tech-badge text-decoration-none btn-outline-secondary">STMA (Sports Turf)</a>
+                            <a href="https://geoprofessional.org" target="_blank" class="btn btn-sm project-link tech-badge text-decoration-none btn-outline-secondary">GBA (Geoprofessional)</a>
+                            <a href="https://aoassn.org" target="_blank" class="btn btn-sm project-link tech-badge text-decoration-none btn-outline-secondary">AOA (American Optometric Association)</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Category 5: ThemeForest Release -->
+            <div class="category-header fw-bold">5. Commercial Theme Forest Products — Cruxoid IT Solutions (2015 – 2016)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-6">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Commercial Multipurpose Themes</span>
+                            <h5 class="text-white fw-bold mb-2">Loomx &amp; Startup HTML Templates</h5>
+                            <p style="color: var(--text-muted);" class="small">
+                                Engineered agency templates, Single-Page Applications (SPA), and landing pages for global ThemeForest release. Executed PSD to HTML conversion and 100% W3C valid responsive layouts.
+                            </p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tech-badge">Bootstrap</span><span class="tech-badge">jQuery</span><span class="tech-badge">W3C Validation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="custom-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-info mono small d-block mb-2">Specialized Niche Themes</span>
+                            <h5 class="text-white fw-bold mb-2">Pets &amp; Scilla E-commerce Themes</h5>
+                            <p style="color: var(--text-muted);" class="small">
+                                Built niche responsive themes for pet services and business e-commerce storefronts. Integrated interactive jQuery widgets, mobile-first navigation, and parallax UI elements.
+                            </p>
+                        </div>
+                        <div class="mt-2">
+                            <span class="tech-badge">E-commerce UI</span><span class="tech-badge">Mobile-First</span><span class="tech-badge">jQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Category 6: Enrich Web Tech -->
+            <div class="category-header fw-bold">6. Multi-Industry Web Overhauls — Enrich Web Technologies (2014 – 2015)</div>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-3 h-100">
+                        <span class="text-info mono small d-block mb-1">Tourism &amp; History</span>
+                        <h6 class="text-white fw-bold mb-1">WalkThroughIndia</h6>
+                        <a href="https://walkthroughindia.com" target="_blank" class="project-link small d-block mb-2">walkthroughindia.com</a>
+                        <p style="color: var(--text-muted);" class="small mb-0">Multi-page responsive historical portal.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-3 h-100">
+                        <span class="text-info mono small d-block mb-1">Real Estate &amp; Industrial</span>
+                        <h6 class="text-white fw-bold mb-1">Bhaishree &amp; Nathbiogenes</h6>
+                        <a href="https://bhaishreeventures.com" target="_blank" class="project-link small d-block mb-1">bhaishreeventures.com</a>
+                        <a href="https://nathbiogenes.com" target="_blank" class="project-link small d-block mb-2">nathbiogenes.com</a>
+                        <p style="color: var(--text-muted);" class="small mb-0">Industrial WordPress UI &amp; Parallax sites for Varroclab and Dodal Enterprises.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-3 h-100">
+                        <span class="text-info mono small d-block mb-1">Listings &amp; Services</span>
+                        <h6 class="text-white fw-bold mb-1">No Footprints &amp; Beauty World</h6>
+                        <a href="https://nofootprintsmumbai.com" target="_blank" class="project-link small d-block mb-1">nofootprintsmumbai.com</a>
+                        <a href="https://beautyworldsalon.in" target="_blank" class="project-link small d-block mb-2">beautyworldsalon.in</a>
+                        <p style="color: var(--text-muted);" class="small mb-0">Modern urban services &amp; business directory sites.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="custom-card p-3 h-100">
+                        <span class="text-info mono small d-block mb-1">E-Commerce / Retail</span>
+                        <h6 class="text-white fw-bold mb-1">Paytaan Footwear</h6>
+                        <a href="https://paytaan.com" target="_blank" class="project-link small d-block mb-2">paytaan.com</a>
+                        <p style="color: var(--text-muted);" class="small mb-0">Built professional retail e-commerce footwear web presence.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Communication Pipeline / Contact Section -->
+    <section id="contact" style="background-color: #0b1120;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <p class="mono mb-2" style="color: var(--accent-blue);">04 // PIPELINE INTERFACE</p>
+                    <h2 class="display-5 fw-bold text-white mb-4">Let's Connect</h2>
+                    <p style="color: var(--text-muted);" class="mb-5 mx-auto max-width-600">
+                        I am available for senior UI engineering roles, Salesforce portal customization, and front-end optimization consulting.
+                    </p>
+                    
+                    <div class="row justify-content-center g-3 mb-4">
+                        <div class="col-auto">
+                            <a href="mailto:pravinshewale@gmail.com" class="btn btn-info px-4 py-3 fw-bold text-dark">
+                                pravinshewale@gmail.com
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="https://linkedin.com/in/pravin-shewale-71236321a" target="_blank" class="btn btn-outline-light px-4 py-3 fw-semibold">
+                                View LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mono text-secondary small">Phone: +91 7875770149 | Location: Aurangabad, MS, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Elements -->
+    <footer class="py-4 text-center border-top border-dark" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <p class="mono text-secondary m-0 small">&copy; 2026 Pravin Shewale. Designed with clean W3C web standards.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
